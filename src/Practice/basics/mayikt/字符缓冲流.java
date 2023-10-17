@@ -13,7 +13,8 @@ public class 字符缓冲流 {
     public static void main(String[] args) throws IOException {
         //使用字符缓冲流向磁盘中写入数据
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("D:\\File\\day01\\MSL.txt", true));
-        bufferedWriter.write("我爱学习计算机\r\n");
+        bufferedWriter.write("我爱学习计算机");
+        bufferedWriter.newLine();//换行操作,就不需要使用\r\n去进行换行了
         System.out.println("写入数据成功");
         bufferedWriter.close();
 

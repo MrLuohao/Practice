@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @description: 字节流写入数据：将程序中的数据写入磁盘
  */
 public class IO流 {
+
     public static void main(String[] args) throws IOException {
         //1.创建文件输出流，需要指定文件写入路径并抛出异常
         FileOutputStream fileOutputStream = new FileOutputStream("D:\\File\\day02\\b.txt");
